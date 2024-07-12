@@ -14,14 +14,12 @@ function CreateInvoice({ onAddInvoice }) {
   const handleChange = (event) => {
     const { id, value } = event.target
     const newValue = value | 0
-    // Calculates new values
     const newFormData = { ...formData, [id]: value }
     const tempFormData = { ...formData, [id]: newValue }
     const amount = parseFloat(tempFormData.price) * parseFloat(tempFormData.quantity)
     const newDiscount = (amount * parseFloat(tempFormData.discountPercentage) / 100).toFixed(2)
     const newTax = (amount * parseFloat(tempFormData.taxPercentage) / 100).toFixed(2)
     const newTotal = (amount - parseFloat(newDiscount) + parseFloat(newTax)).toFixed(2)
-    // Updates the state
     setFormData({
         ...newFormData,
         discount: newDiscount,
@@ -33,9 +31,7 @@ function CreateInvoice({ onAddInvoice }) {
   const handleSubmit = (event) => {
     event.preventDefault();
     const newRecord = { ...formData };
-    // Add the new record to the list
     onAddInvoice(newRecord);
-    // Clear the form fields after submission
     setFormData({
       quantity: '',
       price: '',

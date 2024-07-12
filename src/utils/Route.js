@@ -1,7 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../components/Home";
-import CreateInvoice from "../components/CreateInvoice";
-import ListInvoice from "../components/ListInvoice";
+import InvoiceManage from "../page/InvoiceManage";
 
 export const route=createBrowserRouter([
     {
@@ -9,11 +8,9 @@ export const route=createBrowserRouter([
         Component:Home
     },
     {
-        path:'/create-invoice',
-        Component:CreateInvoice
-    },
-    {
-        path:'/show-all-invoice',
-        Component:ListInvoice
+        path:'/invoice-manager',
+        Component:InvoiceManage
+       
     }
+   
 ])
