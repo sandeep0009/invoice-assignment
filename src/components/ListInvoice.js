@@ -29,8 +29,8 @@ function ListInvoice({ invoiceList, onEditInvoice, onDeleteInvoice, setInvoiceLi
   };
 
   return (
-    <div className='m-5 overflow-x-auto bg-gray-100'>
-      <h2 className='text-2xl font-bold mb-4'>List of Invoices</h2>
+    <div className='m-5 overflow-x-auto bg-gray-100 mt-10'>
+      <h2 className='text-2xl font-bold mb-4 text-center'>List of Invoices</h2>
       <table className='w-full text-sm text-left text-gray-500'>
         <thead className='text-xs text-gray-700 uppercase bg-gray-200'>
           <tr>
