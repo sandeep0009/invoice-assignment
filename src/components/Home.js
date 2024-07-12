@@ -5,7 +5,7 @@ import Typewriter from 'typewriter-effect';
 const Home = () => {
     const navigate=useNavigate();
     const handleNavigate=async()=>{
-        navigate('/create-invoice')
+        navigate('/invoice-manager')
     }
     return (
         <div className='flex flex-col justify-center items-center h-screen'>
