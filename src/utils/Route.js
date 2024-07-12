@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../components/Home";
 import CreateInvoice from "../components/CreateInvoice";
-import AllInvoice from "../components/AllInvoice";
+import ListInvoice from "../components/ListInvoice";
 
 export const route=createBrowserRouter([
     {
@@ -14,6 +14,6 @@ export const route=createBrowserRouter([
     },
     {
         path:'/show-all-invoice',
-        Component:AllInvoice
+        Component:ListInvoice
     }
 ])

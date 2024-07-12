@@ -77,7 +77,7 @@ function CreateInvoice({ onAddInvoice }) {
         </div>
       ))}
       <div className='col-span-full mt-5 mb-3 text-center'>
-        <button className="px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500" type="submit">
+        <button onClick={handleSubmit} className="px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500" type="submit">
           Create Invoice
         </button>
       </div>
